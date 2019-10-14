@@ -9,17 +9,36 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mynavber");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <div class="navber">
+    <div class="topnav" id="mynavber">
         <ul>
             <li><a href="#talent" style="padding-right: 70px;">ความสามารถพิเศษ</a></li>
             <li><a href="#education">การศึกษา</a></li>
             <li><a href="#contact">เกี่ยวกับฉัน</a></li>
             <li><a href="#home">หน้าแรก</a></li>
             <li style="float:left;font-size: 18px;padding-left: 70px;"><a href="#">Resume Project (Pre Camp)</a></li>
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <a href="#">Resume Project (Pre Camp)</a> 
+                    <a href="#home">หน้าแรก</a>
+                    <a href="#contact">เกี่ยวกับฉัน</a>
+                    <a href="#education">การศึกษา</a>
+                    <a href="#talent">ความสามารถพิเศษ</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </ul>
     </div>
     <hr id="home">
@@ -66,15 +85,15 @@
         <div class="div-5-center">
             <h1 style="padding-bottom: 15px;">การศึกษา</h1>
             <h5>ประถมศึกษา - มัธยมศึกษาตอนต้น</h5>
-            <h1 style="padding-left: 50px;font-size: 26px;">โรงเรียนวัดช่างเคี่ยน</h1>
-            <h3 style="padding-left: 50px;font-size: 16px;">ตำบล ช้างเผือก อำเภอเมืองเชียงใหม่ เชียงใหม่ 50300</h3>
+            <h1 style="padding-left: 50px;" class="title-education">โรงเรียนวัดช่างเคี่ยน</h1>
+            <h3 style="padding-left: 50px;" class="address-education">ตำบล ช้างเผือก อำเภอเมืองเชียงใหม่ เชียงใหม่ 50300</h3>
             <h5 style="padding-top: 5px;">ประกาศนียบัตรวิชาชีพ (ปวช.)</h5>
-            <h1 style="padding-left: 50px;font-size: 24px;">สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</h1>
-            <h3 style="padding-left: 50px;font-size: 16px;">9 ถนนเวียงแก้ว ตำบล ศรีภูมิ อำเภอเมืองเชียงใหม่ เชียงใหม่
+            <h1 style="padding-left: 50px;" class="title-education">สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</h1>
+            <h3 style="padding-left: 50px;" class="address-education">9 ถนนเวียงแก้ว ตำบล ศรีภูมิ อำเภอเมืองเชียงใหม่ เชียงใหม่
                 50200</h3>
             <h5 style="padding-top: 5px;">(ตอนนี้) ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h5>
-            <h1 style="padding-left: 50px;font-size: 24px;">สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</h1>
-            <h3 style="padding-left: 50px;font-size: 16px;">9 ถนนเวียงแก้ว ตำบล ศรีภูมิ อำเภอเมืองเชียงใหม่ เชียงใหม่
+            <h1 style="padding-left: 50px;" class="title-education">สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</h1>
+            <h3 style="padding-left: 50px;" class="address-education">9 ถนนเวียงแก้ว ตำบล ศรีภูมิ อำเภอเมืองเชียงใหม่ เชียงใหม่
                 50200</h3>
         </div>
     </div>
@@ -85,7 +104,7 @@
         <div class="div-8-center">
             <h1>ความสามารถพิเศษ</h1>
             <h4>1. มีความสามารถในการสื่อสารได้เป็นอย่างดี</h4>
-            <h4>2. มีมารยาททางสังคมและประพฤติตนเหมาะสมตามกาลเทศะ</h4>            
+            <h4>2. มีมารยาททางสังคมและประพฤติตนเหมาะสมตามกาลเทศะ</h4>
             <h4>3. ลำดับความสำคัญของงานแต่ละชิ้นได้ มีความสามารถในการวางแผน</h4>
         </div>
     </div>
