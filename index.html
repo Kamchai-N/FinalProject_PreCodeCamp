@@ -46,7 +46,7 @@
     <div id="div-2" class="col-50">
         <div class="header">
             <div class="header-title-sup">ยินดีต้อนรับเข้าสู่เว็บไซต์</div>
-            <div class="header-title"> สวัสดี, ผมชื่อ <b>กำชัย</b></div>
+            <div class="header-title"> สวัสดี, ผมชื่อ <b id="name-header" onmouseover="nameheader()">กำชัย</b></div>
             <div class="header-title-sub">
                 เว็บไซต์ทำขึ้นเพื่อเป็นตัวแทนข้อมูลเกี่ยวกับประวัติส่วนตัว,ประวัติการศึกษา, ความสามารถพิเศษ </div>
         </div>
@@ -55,12 +55,12 @@
     <div id="div-3" class="col-50-h-20">
         <div class="div-3-center">
             <h1>เกี่ยวกับฉัน</h1>
-            <p> <b>ชื่อ</b> นายกำชัย บุญศรี</p>
-            <p> <b>ชื่อเล่น</b> นุ้ย</p>
-            <p> <b>อายุ</b> 19</p>
-            <p> <b>สถานศึกษาปัจจุบัน</b> วิทยาลัยเทคนิคเชียงใหม่</p>
-            <p> <b>ระดับชั้น</b> ประกาศนียบัตรวิชาชีพชั้นสูง</p>
-            <p> <b>สาขาวิชา</b> เทคโนโลยีสารสนเทศ</p>
+            <p style="display: inline;"><i class="fas fa-edit" onclick="nameClick()"></i> <b>ชื่อ</b> <p style="display: inline;" id="name">นายกำชัย บุญศรี</p></p>
+            <p style="display: inline;"><i class="fas fa-edit" onclick="nicknameClick()"></i> <b>ชื่อเล่น</b> <p style="display: inline;" id="nickname">นุ้ย</p></p>
+            <p style="display: inline;"><i class="fas fa-edit" onclick="ageClick()"></i> <b>อายุ</b> <p style="display: inline;" id="age">19</p></p>
+            <p style="display: inline;"><i class="fas fa-edit" onclick="academyClick()"></i> <b>สถานศึกษาปัจจุบัน</b> <p style="display: inline;" id="academy">วิทยาลัยเทคนิคเชียงใหม่</p></p>
+            <p style="display: inline;"><i class="fas fa-edit" onclick="levelClick()"></i> <b>ระดับชั้น</b> <p style="display: inline;" id="level">ประกาศนียบัตรวิชาชีพชั้นสูง</p></p>
+            <p style="display: inline;"><i class="fas fa-edit" onclick="branchClick()"></i> <b>สาขาวิชา</b> <p style="display: inline;" id="branch">เทคโนโลยีสารสนเทศ</p></p>
         </div>
     </div>
     <div id="div-4" class="col-50-h-20"></div>
@@ -84,15 +84,15 @@
     <div id="div-5" class="col-50-h-20">
         <div class="div-5-center">
             <h1 style="padding-bottom: 15px;">การศึกษา</h1>
-            <h5>ประถมศึกษา - มัธยมศึกษาตอนต้น</h5>
-            <h1 style="padding-left: 50px;" class="title-education">โรงเรียนวัดช่างเคี่ยน</h1>
+            <p>ประถมศึกษา - มัธยมศึกษาตอนต้น</p>
+            <i class="fas fa-edit" onclick="secondary_educationClick()" style="display: inline;"></i><h1 style="padding-left: 50px;display: inline;" class="title-education" id="title-education-1">โรงเรียนวัดช่างเคี่ยน</h1>
             <h3 style="padding-left: 50px;" class="address-education">ตำบล ช้างเผือก อำเภอเมืองเชียงใหม่ เชียงใหม่ 50300</h3>
-            <h5 style="padding-top: 5px;">ประกาศนียบัตรวิชาชีพ (ปวช.)</h5>
-            <h1 style="padding-left: 50px;" class="title-education">สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</h1>
+            <p style="padding-top: 5px;">ประกาศนียบัตรวิชาชีพ (ปวช.)</p>
+            <i class="fas fa-edit" onclick="vocational_certificateClick()" style="display: inline;"></i><h1 style="padding-left: 50px;display: inline;" class="title-education" id="title-education-2">สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</h1>
             <h3 style="padding-left: 50px;" class="address-education">9 ถนนเวียงแก้ว ตำบล ศรีภูมิ อำเภอเมืองเชียงใหม่ เชียงใหม่
                 50200</h3>
-            <h5 style="padding-top: 5px;">(ตอนนี้) ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h5>
-            <h1 style="padding-left: 50px;" class="title-education">สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</h1>
+            <p style="padding-top: 5px;">(ตอนนี้) ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</p>
+            <i class="fas fa-edit" onclick="high_vocational_certificateClick()" style="display: inline;"></i><h1 style="padding-left: 50px;display: inline;" class="title-education" id="title-education-3">สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</h1>
             <h3 style="padding-left: 50px;" class="address-education">9 ถนนเวียงแก้ว ตำบล ศรีภูมิ อำเภอเมืองเชียงใหม่ เชียงใหม่
                 50200</h3>
         </div>
@@ -103,11 +103,12 @@
     <div id="div-8" class="col-50-h-20">
         <div class="div-8-center">
             <h1>ความสามารถพิเศษ</h1>
-            <h4>1. มีความสามารถในการสื่อสารได้เป็นอย่างดี</h4>
-            <h4>2. มีมารยาททางสังคมและประพฤติตนเหมาะสมตามกาลเทศะ</h4>
-            <h4>3. ลำดับความสำคัญของงานแต่ละชิ้นได้ มีความสามารถในการวางแผน</h4>
+            <p style="display: inline;"><i class="fas fa-edit" onclick="talent_1_Click()"></i> <b>1.</b> <p style="display: inline;" id="talent_1">มีความสามารถในการสื่อสารได้เป็นอย่างดี</p></p>
+            <p style="display: inline;"><i class="fas fa-edit" onclick="talent_2_Click()"></i> <b>2.</b> <p style="display: inline;" id="talent_2">มีมารยาททางสังคมและประพฤติตนเหมาะสมตามกาลเทศะ</p></p>
+            <p style="display: inline;"><i class="fas fa-edit" onclick="talent_3_Click()"></i> <b>3.</b> <p style="display: inline;" id="talent_3">ลำดับความสำคัญของงานแต่ละชิ้นได้ มีความสามารถในการวางแผน</p></p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
